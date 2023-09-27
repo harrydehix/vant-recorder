@@ -1,0 +1,24 @@
+vant-recorder  2023-09-27T18:54:07.633Z  info : Configured logger!
+vant-recorder  2023-09-27T18:54:07.636Z  debug : Loaded environment variables!
+vant-recorder  2023-09-27T18:54:07.638Z  info : Connecting to device /dev/ttyUSB0 (Pro2)...
+vant-recorder  2023-09-27T18:54:07.742Z  info : Connected!
+vant-recorder  2023-09-27T18:54:07.746Z  info : Started recorder!
+vant-recorder  2023-09-27T18:54:07.926Z  info : New realtime record (Wed Sep 27 2023 20:54:07 GMT+0200 (Central European Summer Time))
+vant-recorder  2023-09-27T18:54:07.967Z  error : Failed to send realtime record!
+vant-recorder  2023-09-27T18:54:07.968Z  error : Is your api running?
+vant-recorder  2023-09-27T18:54:08.184Z  info : New realtime record (Wed Sep 27 2023 20:54:08 GMT+0200 (Central European Summer Time))
+vant-recorder  2023-09-27T18:54:08.196Z  error : Failed to send realtime record!
+vant-recorder  2023-09-27T18:54:08.197Z  error : Is your api running?
+vant-recorder  2023-09-27T18:54:09.163Z  info : New realtime record (Wed Sep 27 2023 20:54:09 GMT+0200 (Central European Summer Time))
+vant-recorder  2023-09-27T18:54:09.173Z  error : Failed to send realtime record!
+vant-recorder  2023-09-27T18:54:09.174Z  error : Is your api running?
+vant-recorder  2023-09-27T18:54:10.156Z  info : New realtime record (Wed Sep 27 2023 20:54:10 GMT+0200 (Central European Summer Time))
+vant-recorder  2023-09-27T18:54:10.164Z  error : Failed to send realtime record!
+vant-recorder  2023-09-27T18:54:10.164Z  error : Is your api running?
+vant-recorder  2023-09-27T18:54:11.153Z  info : New realtime record (Wed Sep 27 2023 20:54:11 GMT+0200 (Central European Summer Time))
+vant-recorder  2023-09-27T18:54:11.163Z  error : Failed to send realtime record!
+vant-recorder  2023-09-27T18:54:11.164Z  error : Is your api running?
+vant-recorder  2023-09-27T18:54:12.155Z  info : New realtime record (Wed Sep 27 2023 20:54:12 GMT+0200 (Central European Summer Time))
+vant-recorder  2023-09-27T18:54:12.163Z  error : Failed to send realtime record!
+vant-recorder  2023-09-27T18:54:12.164Z  error : Is your api running?
+vant-recorder  2023-09-27T18:54:12.503Z  warn : Received SIGINT event!
