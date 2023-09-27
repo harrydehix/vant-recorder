@@ -6,7 +6,8 @@
     "private": "false",
     "scripts": {
         "build": "npx tsc",
-        "start": "node -r source-map-support/register ./dist/service.js"
+        "start": "node -r source-map-support/register ./dist/service.js",
+        "service": "forever -r source-map-support/register ./dist/service.js -l /logs/forever.log"
     },
     "keywords": [],
     "author": "",
