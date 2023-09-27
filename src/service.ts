@@ -26,6 +26,7 @@ process.on('exit', () => {
 async function shutdownGracefully(){
     log.info("Shutting down gracefully...");
     recorder?.stop();
+    await recorder?.interface.close();
     process.exit();
 }
 
