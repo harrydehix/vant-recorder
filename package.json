@@ -7,7 +7,7 @@
     "scripts": {
         "build": "npx tsc",
         "start": "node -r source-map-support/register ./dist/service.js",
-        "service": "forever -r source-map-support/register ./dist/service.js -l /logs/forever.log"
+        "docker-image": "sudo docker build -t vant-recorder ."
     },
     "keywords": [],
     "author": "",
