@@ -1,9 +1,8 @@
 {
     "name": "vant-recorder",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "",
     "main": "index.js",
-    "private": "false",
     "scripts": {
         "build": "npx tsc",
         "start": "node -r source-map-support/register ./dist/service.js",
