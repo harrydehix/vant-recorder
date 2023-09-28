@@ -352,16 +352,18 @@ class Recorder {
         log.info("New realtime record (" + record.time + ")");
         superagent
             .post(this.settings.api + "/v1/current")
+            .disableTLSCerts()
             .send(record)
             .set('accept', 'json')
             .set('x-api-key', this.settings.key)
             .end((err, res: superagent.Response) => {
                 if(!res || !res.ok){
-                    log.error("Failed to send realtime record!");  
+                    log.error(`Failed to send realtime record to '${this.settings.api}'!`);  
                     if(res && res.body && res.body.message){
                         log.error("Server message: '" + res.body.message + "'");
                     }else{
                         log.error("Is your api running?");
+                        log.error(err);
                     }
                 }else{
                     log.debug("Sent realtime record (" + record!.time + ") successfully!");
