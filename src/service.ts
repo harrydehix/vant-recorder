@@ -1,8 +1,8 @@
 import Recorder from "./Recorder";
 import log from "./log";
 
-let recorder : Recorder | undefined;
-async function main(){    
+let recorder: Recorder | undefined;
+async function main() {
     recorder = await Recorder.create({
         preferEnvironmentVariables: true,
     });
@@ -18,40 +18,39 @@ async function main(){
 main();
 
 // do something when app is closing
-process.on('exit', () => {
+process.on("exit", () => {
     log.info("Exiting!");
 });
 
-
-async function shutdownGracefully(){
+async function shutdownGracefully() {
     log.info("Shutting down gracefully...");
     recorder?.stop();
-    await recorder?.interface.close();
+    await recorder?.station.close();
     process.exit();
 }
 
 // catches ctrl+c event
-process.on('SIGINT', () => {
+process.on("SIGINT", () => {
     log.warn("Received SIGINT event!");
     shutdownGracefully();
 });
 
 // catches "kill pid" (for example: nodemon restart)
-process.on('SIGUSR1', () => {
+process.on("SIGUSR1", () => {
     log.warn("Received kill (SIGNUSR1) signal!");
     shutdownGracefully();
 });
-process.on('SIGUSR2', () => {
+process.on("SIGUSR2", () => {
     log.warn("Received kill (SIGNUSR2) signal!");
     shutdownGracefully();
 });
-process.on('SIGTERM', () => {
+process.on("SIGTERM", () => {
     log.warn("Received kill (SIGTERM) signal!");
     shutdownGracefully();
 });
 
 // catches uncaught exceptions
-process.on('uncaughtException', (err) => {
+process.on("uncaughtException", (err) => {
     log.error("Uncaught exception!");
     log.error(err);
     shutdownGracefully();

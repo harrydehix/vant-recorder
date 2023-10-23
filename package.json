@@ -1,6 +1,6 @@
 {
     "name": "vant-recorder",
-    "version": "0.1.1",
+    "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
@@ -24,7 +24,6 @@
         "superagent": "^8.1.2",
         "ts-essentials": "^9.4.0",
         "validator": "^13.11.0",
-        "vant-environment": "^2.0.1",
-        "vantjs": "^1.0.10"
+        "vant-environment": "^4.0.2"
     }
 }
